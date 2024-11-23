@@ -1,2 +1,1 @@
-# school-pages
-# school-pages
+#README
