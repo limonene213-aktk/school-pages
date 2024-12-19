@@ -32,6 +32,10 @@ header {
     background-color: #fffaf0; /* 2年生用の背景色 (薄いクリーム色) */
 }
 
+.gpts {
+    background-color: #eaebfa; /* 2年生用の背景色 (薄い青系) */
+}
+
 .year-section h3 {
     margin-bottom: 10px;
     color: #007acc;
