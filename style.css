@@ -1,102 +1,167 @@
-/* ベーシックスタイル */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f5f7fb;
+    --text: #1f2937;
+    --muted: #64748b;
+    --border: #d8e0ef;
+    --accent: #2563eb;
+    --card: #ffffff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 0 20px;
+    margin: 0;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
 }
 
-header {
-    background-color: #007acc;
+.site-header {
+    background: var(--accent);
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 48px 16px 56px;
+    box-shadow: 0 18px 45px rgba(37, 99, 235, 0.25);
 }
 
-/* セクションごとのスタイル */
-.year-section {
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
+.site-header__inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
 }
 
-.year1 {
-    background-color: #f0f8ff; /* 1年生用の背景色 (薄い青) */
+.site-title {
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
 }
 
-.year2 {
-    background-color: #fffaf0; /* 2年生用の背景色 (薄いクリーム色) */
+.site-tagline {
+    margin: 0;
+    max-width: 640px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
-.gpts {
-    background-color: #eaebfa; /* 2年生用の背景色 (薄い青系) */
+.content {
+    max-width: 960px;
+    margin: 40px auto 56px;
+    padding: 0 16px;
+    display: grid;
+    gap: 32px;
 }
 
-.year-section h3 {
-    margin-bottom: 10px;
-    color: #007acc;
+.resource-group {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
 }
 
-ul {
+.resource-group__header {
+    margin-bottom: 18px;
+}
+
+.resource-group__header h2 {
+    margin: 0;
+    font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+    color: var(--accent);
+}
+
+.resource-group__note {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.resource-list {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 18px;
 }
 
-ul li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+.resource-item {
+    list-style: none;
 }
 
-ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-ul li a {
+.resource-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
     text-decoration: none;
     color: inherit;
+    transition: border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-ul li h4 {
-    margin-bottom: 5px;
-    font-size: 1.2rem;
-    color: #007acc;
+.resource-card__title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
-ul li p {
-    font-size: 0.9rem;
-    color: #555;
+.resource-card__meta {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 6px;
 }
 
-/*Extra*/
-.extra-content {
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
+.resource-card__description {
+    display: block;
+    font-size: 0.95rem;
 }
 
-.ex1 {
-    background-color: #e0a1a1; /* Extraの背景色 (薄い赤) */
+.resource-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 28px rgba(37, 99, 235, 0.18);
 }
 
-iframe {
+.video-card {
+    display: grid;
+    gap: 12px;
+}
+
+.video-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
     border: none;
+    border-radius: 14px;
 }
 
-/* フッタースタイル */
-footer {
+.site-footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    font-size: 0.8rem;
-    color: #777;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 24px 16px 40px;
+}
+
+@media (max-width: 720px) {
+    .site-header {
+        padding: 36px 16px 44px;
+    }
+
+    .resource-group {
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .resource-card {
+        padding: 16px 18px;
+    }
 }

@@ -1,149 +1,225 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>伊藤クラス 授業用リソース情報</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>伊藤クラス 授業用リソース情報</h1>
-    </header>
-    <main>
-        <section class="repository-list">
-            <h2>資料どうぞ</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>伊藤クラス 授業用リソース</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="site-header__inner">
+                <h1 class="site-title">伊藤クラス 授業用リソース</h1>
+                <p class="site-tagline">
+                    授業や自習で使うリンクをまとめています。開きたい資料をクリックすると別タブで開きます。
+                </p>
+            </div>
+        </header>
 
-            <!-- 1年生用リソース -->
-            <div class="year-section year1">
-                <h3>1年生用</h3>
-                <ul>
-                    <li>
-                        <a href="https://drive.google.com/drive/folders/1eoowcJ-QvZK6y1cQ4-yAdXfx6h2MqsHT?usp=drive_link" target="_blank">
-                            <h4>Wordpress用の資料（Google Drive）</h4>
-                            <p>説明: Wordpress授業用のリソースです。</p>
+        <main class="content">
+            <section class="resource-group" aria-labelledby="year-1-title">
+                <div class="resource-group__header">
+                    <h2 id="year-1-title">1年生向け</h2>
+                    <p class="resource-group__note">1年生の授業で使用する資料集です。</p>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://drive.google.com/drive/folders/1eoowcJ-QvZK6y1cQ4-yAdXfx6h2MqsHT?usp=drive_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">WordPress授業用資料</span>
+                            <span class="resource-card__meta">Google Drive</span>
+                            <span class="resource-card__description">WordPress授業で配布するファイル一式です。</span>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- 2年生用リソース -->
-            <div class="year-section year2">
-                <h3>2年生用</h3>
-                <ul>
-                    <li>
-                        <a href="https://drive.google.com/drive/folders/13RMHCoHysD7JM_2dr0c7DSgBrCsBnOfx?usp=drive_link" target="_blank">
-                            <h4>PHP/Laravel用の資料（Google Drive）</h4>
-                            <p>説明: PHPおよびLaravel授業用のリソースです。</p>
+            <section class="resource-group" aria-labelledby="year-2-title">
+                <div class="resource-group__header">
+                    <h2 id="year-2-title">2年生向け</h2>
+                    <p class="resource-group__note">Laravel や PHP の演習で利用するリポジトリと資料。</p>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://drive.google.com/drive/folders/13RMHCoHysD7JM_2dr0c7DSgBrCsBnOfx?usp=drive_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">PHP / Laravel資料</span>
+                            <span class="resource-card__meta">Google Drive</span>
+                            <span class="resource-card__description">授業で配布するスライドや補助資料をまとめています。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/php-2024"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">PHPの基本文法</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">基本文法を押さえるためのサンプルコード集です。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/php-html-example"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">PHPとHTML/DB</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">基本的なWebアプリを作る例を段階的にまとめています。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/php-network-example"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">PHPと通信関連のコード</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">API連携や外部サービスと通信するコード例です。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/php-objective-sample"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">PHPにおけるオブジェクト指向例</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">クラス設計やオブジェクト指向の考え方を練習するためのリポジトリ。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/laravel-test-project2024"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">Laravel（test-project）</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">授業で扱うメインのLaravelプロジェクト。授業後に内容を最新化しています。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/blade-example-2024"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">Laravel（blade-example）</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">Blade テンプレートの基礎と MVC の流れを理解するための例。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://github.com/limonene213-aktk/laravel-component-example2024"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">Laravel（component-example）</span>
+                            <span class="resource-card__meta">GitHub</span>
+                            <span class="resource-card__description">Laravel コンポーネントを学ぶための基本的な実装例です。</span>
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="https://github.com/limonene213-aktk/php-2024" target="_blank">
-                            <h4>PHPの基本文法</h4>
-                            <p>説明: 基本文法のサンプルコードです。</p>
+            </section>
+
+            <section class="resource-group" aria-labelledby="ai-title">
+                <div class="resource-group__header">
+                    <h2 id="ai-title">練習問題作成 AI</h2>
+                    <p class="resource-group__note">ChatGPT のカスタムGPTで、演習問題の作成や学習サポートに使えます。</p>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://chatgpt.com/g/g-6762daa0088481919788dd7cc11dada7-phpnohuroninaru-anatanoxue-xi-sahota"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">PHPのプロになる！あなたの学習サポーター</span>
+                            <span class="resource-card__meta">ChatGPT</span>
+                            <span class="resource-card__description">PHP の基礎を日本語で丁寧に解説しながら練習問題を出題します。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://chatgpt.com/g/g-6762df1752888191ad4558c6dcda9715-laravelchu-xin-zhe-wen-ti-meka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">Laravel初心者問題メーカー！</span>
+                            <span class="resource-card__meta">ChatGPT</span>
+                            <span class="resource-card__description">Laravel の構造を学ぶ人向けに練習問題と解説を生成します。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://chatgpt.com/g/g-67623b031c348191bafc0502e067893c-python-chu-xin-zhe-wen-ti-meka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">Python初心者問題メーカー！</span>
+                            <span class="resource-card__meta">ChatGPT</span>
+                            <span class="resource-card__description">Python の基本を確認しながら反復練習できるように問題を出してくれます。</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a
+                            class="resource-card"
+                            href="https://chatgpt.com/g/g-676378541ebc81918ec6d024282ea7a2-cyan-yu-noli-ti-towen-ti"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="resource-card__title">C言語の例題と問題</span>
+                            <span class="resource-card__meta">ChatGPT</span>
+                            <span class="resource-card__description">C言語の例題や演習問題をやさしい日本語でサポートします。</span>
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/limonene213-aktk/php-html-example" target="_blank">
-                                <h4>PHPとHTML/DB</h4>
-                                <p>説明: 基本的なWebアプリを作るための実装例です。</p>
-                            </a>
-                        </li>
-                    <ul>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://github.com/limonene213-aktk/php-network-example" target="_blank">
-                            <h4>PHPと通信関連のコード</h4>
-                            <p>説明: Webアプリを作成するうえで必要となるPHPと通信関連のコード例です。</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://github.com/limonene213-aktk/php-objective-sample" target="_blank">
-                            <h4>PHPにおけるオブジェクト指向例</h4>
-                            <p>説明: PHPにおけるオブジェクト指向の例を示しています。</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://github.com/limonene213-aktk/laravel-test-project2024" target="_blank">
-                            <h4>Laravel（test-project）</h4>
-                            <p>説明: 基本的に毎回の授業で使うもの。教科書の内容はこちらのプロジェクトで作業します。授業後に最新状態にしています。</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/limonene213-aktk/blade-example-2024" target="_blank">
-                            <h4>Laravel（blade-example）</h4>
-                            <p>説明: MVCモデル理解のための基本例です。宿題などの答えまで反映した状態にしています。</p>
-                        </a>
-                    </li>
-                </ul>
-                <li>
-                    <a href="https://github.com/limonene213-aktk/laravel-component-example2024" target="_blank">
-                        <h4>Laravel（component-example）</h4>
-                        <p>説明: コンポーネント理解のための基本例です。</p>
-                    </a>
-                </li>
-            </ul>
-            </div>
-            <!-- GPTs -->
-            <div class="year-section gpts">
-                <h3>練習問題出題用AI</h3>
-                <ul>
-                    <li>
-                        <a href="https://chatgpt.com/g/g-6762daa0088481919788dd7cc11dada7-phpnohuroninaru-anatanoxue-xi-sahota" target="_blank">
-                            <h4>PHPのプロになる！あなたの学習サポーター</h4>
-                            <p>PHPの基礎を優しく教える日本語のサポートGPT</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://chatgpt.com/g/g-6762df1752888191ad4558c6dcda9715-laravelchu-xin-zhe-wen-ti-meka" target="_blank">
-                            <h4>Laravel初心者問題メーカー！</h4>
-                            <p>Laravelの勉強を手厚くサポート！</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://chatgpt.com/g/g-67623b031c348191bafc0502e067893c-python-chu-xin-zhe-wen-ti-meka" target="_blank">
-                            <h4>Python初心者問題メーカー！</h4>
-                            <p>平易な日本語でPython問題を作成・解答！</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://chatgpt.com/g/g-676378541ebc81918ec6d024282ea7a2-cyan-yu-noli-ti-towen-ti" target="_blank">
-                            <h4>C言語の例題と問題</h4>
-                            <p>日本語話者のためのやさしいC言語学習サポーター</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="extra-content ex1">
-                <ul>
-                    <li>
-                        <a>
-                        <h4>おまけ：GitHubの使い方</h4>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dz95iUNt-fg?si=4fEvBSXAu2GUL8HL" 
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" 
-                                    allowfullscreen>
-                            </iframe>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 伊藤クラス 授業用リソースインフォメーション</p>
-    </footer>
-</body>
+            </section>
+
+            <section class="resource-group" aria-labelledby="extra-title">
+                <div class="resource-group__header">
+                    <h2 id="extra-title">おまけ</h2>
+                    <p class="resource-group__note">操作に迷ったときに見返せる動画リソースです。</p>
+                </div>
+                <div class="video-card">
+                    <span class="video-card__title">GitHubの使い方（YouTube）</span>
+                    <iframe
+                        src="https://www.youtube.com/embed/Dz95iUNt-fg?si=4fEvBSXAu2GUL8HL"
+                        title="GitHubの基本操作"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <small>© 2024 伊藤クラス 授業用リソース</small>
+        </footer>
+    </body>
 </html>
